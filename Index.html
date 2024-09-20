@@ -5,39 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <title>Bootstrap demo</title>
+    <title>Agregar Comidas</title>
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>     
+ 
   </head>
   <body>
-    <div class="contenedor">
+    <div class="container">
       <h1>Agregar Comidas!</h1>
-      <input type="text" id="comida" placeholder="comida" class="form-control"><br>
-      <input type="text" id="descripcion" placeholder="descripcion" class="form-control"><br>
-      <input type="text" id="valor" placeholder="valor" class="form-control"><br>
+      <input type="text" id="comida" placeholder="Comida" class="form-control"><br>
+      <input type="text" id="descripcion" placeholder="Descripción" class="form-control"><br>
+      <input type="text" id="valor" placeholder="Valor" class="form-control"><br>
+      <input type="text" id="tipo" placeholder="Tipo" class="form-control"><br>
+      <input type="text" id="sabor" placeholder="Sabor" class="form-control"><br>
       <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button> 
       
       <table class="table my-3">
         <thead>
           <tr>
             <th scope="col">Id</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Born</th>
+            <th scope="col">Comida</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Sabor</th>
             <th scope="col">Eliminar</th>
             <th scope="col">Editar</th>
           </tr>
         </thead>
-        <tbody id="tabla">
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>          
-        </tbody>
+        <tbody id="tabla"></tbody>
       </table>
     </div>  
-  <script src="app.js"></script>    
+    <!---------------------------------------postre-------------------------------------------------->
+    <div class="container">
+      <h1>Agregar postres!</h1>
+      <input type="text" id="postre" placeholder="Comida" class="form-control"><br>
+      <input type="text" id="descripcion-postre" placeholder="Descripción" class="form-control"><br>
+      <input type="text" id="valor-postre" placeholder="Valor" class="form-control"><br>
+      <input type="text" id="tipo-postre" placeholder="Tipo" class="form-control"><br>
+      <input type="text" id="sabor-postre" placeholder="Sabor" class="form-control"><br>
+      <button class="btn btn-info" id="boton" onclick="guardarpostre()">Guardar</button> 
+      
+      <table class="table my-3">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Comida</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Sabor</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-postre"></tbody>
+      </table>
+    </div>  
+
+    <!---------------------------------------ensalada-------------------------------------------------->
+    <div class="container">
+      <h1>Agregar ensaladas!</h1>
+      <input type="text" id="comida" placeholder="Comida" class="form-control"><br>
+      <input type="text" id="descripcion" placeholder="Descripción" class="form-control"><br>
+      <input type="text" id="valor" placeholder="Valor" class="form-control"><br>
+      <input type="text" id="tipo" placeholder="Tipo" class="form-control"><br>
+      <input type="text" id="sabor" placeholder="Sabor" class="form-control"><br>
+      <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button> 
+      
+      <table class="table my-3">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Comida</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Sabor</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>  
+
+    <!---------------------------------------bebida-------------------------------------------------->
+    <div class="container">
+      <h1>Agregar bebidas!</h1>
+      <input type="text" id="comida" placeholder="Comida" class="form-control"><br>
+      <input type="text" id="descripcion" placeholder="Descripción" class="form-control"><br>
+      <input type="text" id="valor" placeholder="Valor" class="form-control"><br>
+      <input type="text" id="tipo" placeholder="Tipo" class="form-control"><br>
+      <input type="text" id="sabor" placeholder="Sabor" class="form-control"><br>
+      <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button> 
+      
+      <table class="table my-3">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Comida</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Sabor</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>  
+
+    <!---------------------------------------extra-------------------------------------------------->
+    <div class="container">
+      <h1>Agregar extra!</h1>
+      <input type="text" id="comida" placeholder="Comida" class="form-control"><br>
+      <input type="text" id="descripcion" placeholder="Descripción" class="form-control"><br>
+      <input type="text" id="valor" placeholder="Valor" class="form-control"><br>
+      <input type="text" id="tipo" placeholder="Tipo" class="form-control"><br>
+      <input type="text" id="sabor" placeholder="Sabor" class="form-control"><br>
+      <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button> 
+      
+      <table class="table my-3">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Comida</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Sabor</th>
+            <th scope="col">Eliminar</th>
+            <th scope="col">Editar</th>
+          </tr>
+        </thead>
+        <tbody id="tabla"></tbody>
+      </table>
+    </div>  
+
+    <script src="comida.js"></script>
+    <script src="ensalada.js"></script>    
+    <script src="postre.js"></script>    
+    <script src="bebidas.js"></script>    
+    <script src="extra.js"></script>       
   </body>
 </html>
