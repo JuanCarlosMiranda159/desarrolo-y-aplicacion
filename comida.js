@@ -1,13 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCDVtzBACE4aS4iCF_UKZS02vmZ9dSp4bQ",
-    authDomain: "cafeteria-1ce83.firebaseapp.com",
-    projectId: "cafeteria-1ce83",
-    storageBucket: "cafeteria-1ce83.appspot.com",
-    messagingSenderId: "87934821084",
-    appId: "1:87934821084:web:0bc4dff37fbadada6eca19",
-    measurementId: "G-GGVLE2PZXN"
-  };
-  
+  apiKey: "AIzaSyBUeKmIliOkzdnfcCwLqqZ0QX6ieRyQ9HU",
+  authDomain: "cafeteria-6a672.firebaseapp.com",
+  projectId: "cafeteria-6a672",
+  storageBucket: "cafeteria-6a672.appspot.com",
+  messagingSenderId: "374050151958",
+  appId: "1:374050151958:web:949cc694a4796478559f37",
+  measurementId: "G-VH30DWCPKE"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   

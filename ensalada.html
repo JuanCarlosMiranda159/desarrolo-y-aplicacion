@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <title>Agregar Comidas</title>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Agregar ensaladas!</h1>
+        <input type="text" id="ensalada" placeholder="Comida" class="form-control"><br>
+        <input type="text" id="descripcion-ensalada" placeholder="Descripción" class="form-control"><br>
+        <input type="text" id="valor-ensalada" placeholder="Valor" class="form-control"><br>
+        <input type="text" id="tipo-ensalada" placeholder="Tipo" class="form-control"><br>
+        <input type="text" id="sabor-ensalada" placeholder="Sabor" class="form-control"><br>
+        <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button> 
+        
+        <table class="table my-3">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Comida</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Sabor</th>
+                    <th scope="col">Eliminar</th>
+                    <th scope="col">Editar</th>
+                </tr>
+            </thead>
+            <tbody id="tabla"></tbody>
+        </table>
+    </div>  
+    <script src="ensalada.js"></script>
+</body>
+</html>

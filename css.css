@@ -1,0 +1,23 @@
+.caffecito {
+    font-size: 4rem;
+    color: #6b4f4f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 2px;
+}
+.form-control {
+    border-radius: 0.5rem; 
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border: 2px solid #6b4f4f; 
+  }
+
+  .form-control:focus {
+    border-color: #c69b6b;
+    box-shadow: 0 0 5px rgba(198, 155, 107, 0.5); 
+  }
+
+  .btn-info {
+    border-radius: 0.5rem; 
+    padding: 0.5rem 1rem; 
+  }
